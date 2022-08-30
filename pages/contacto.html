@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indumentaria femenina</title>
+    <link rel="shortcut icon" href="../images/Logo.png">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body class="gridIndex">
+    <header>
+        <img class="logo" src="../images/Logo.png" alt="logo">
+        <nav>
+            <ul class="subAllNavUlLi">
+                <li class="padding border margin"><a href="../index.html">INICIO</a></li>   
+                <li class="padding border margin"><a href="prendas.html">PRENDAS</a></li>       
+                <li class="padding border margin"><a href="accesorios.html">ACCESORIOS</a></li>
+                <li class="padding border margin"><a href="nosotros.html">NOSOTROS</a></li>
+                <li class="padding border margin"><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form  class="bgParrafoContactoRecuadro">   <!-- correccion- habia puesto h3 pero en realidad para cuadros y demas para que la informacion pueda enviarse se debe colocar "form"-->
+            <fieldset>
+                <legend>Contactanos</legend> 
+                <div>
+                    <label for="nombre">Escriba su nombre completo</label>
+                    <input type="text" placeholder="Nombre completo" id="nombre">
+                </div>
+                <div>
+                    <label for="Mail">Escriba su mail</label>
+                    <input type="text" placeholder="gmail obligatorio" id="Mail">
+                </div>
+                <div>
+                    <select name="Reclamos" id="Reclamos">
+                        <option value="soltero" >reclamo</option>
+                        <option value="Casado" >Consulta</option>
+                        <option value="viudo" >Opinion</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Check">Explique brevemente a contunuacion</label>
+                    <input type="checkbox" name="Check" id="">
+                </div>
+                <div>
+                    <textarea name="Comentarios" id="Comentarios" cols="30" rows="10" placeholder=""></textarea>
+                </div>
+                <div>
+                    <input type="reset" value="Resetear formulario">
+                    <input type="submit" value="Enviar formulario" />
+                </div>
+                </fieldset>
+        </form>
+    </main>
+    <footer class="bgColor FooterGrid">
+        <div>
+            <center><img src="../images/Logo.png" alt=""></center>
+        </div>
+        <div>
+            <a href="google.com"></a>
+            <p>
+                <center>
+                  <a href="https://www.whatsapp.com/">
+                  <input type="button" value="contacto">
+                  </a>
+                </center>
+            </p>
+
+            <P>
+                <center>
+                  <a href="https://www.instagram.com/">
+                  <input type="button" value="red social">
+                  </a>    
+                </center>
+            </p>
+        </div>  
+    </footer> 
+</body>
+</html>

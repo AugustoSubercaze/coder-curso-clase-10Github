@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Mouse+Memoirs&family=Pattaya&display=swap');
+*{
+  box-sizing: border-box 0rem;
+  font-family: 'Baloo Thambi 2', cursive;
+}
+/* Etiqueta html con font size % que ayuda a usar rem en vez de px-1rem=10px*/
+a{text-decoration: none; color: blueviolet;}
+html {
+  font-size: 62.5%;
+}
+a{
+  text-decoration: none;
+}
+                       /*Comienza GRID*/
+@media screen and (max-width:769px){
+  body {background-color: yellow;}
+  header nav{
+    width: 200px;
+    height: 10px;
+  }
+  a {color: white;}
+.margin {padding: 1px;
+   margin: 2rem;}
+}                       
+.gridIndex{
+  display: grid;
+  grid-template-areas: 
+  "logo"
+  "encabezadoNav"
+  "subAllNavUlLi"
+  "footerGrid"
+  "prendasGrid"
+  "imagIndexMove gridMainIndex";
+  background-color: pink;
+}
+
+.gridMainIndex {
+  display: grid;
+  grid-template-areas: 
+  homeModelo
+  loremIndex;
+}
+
+                  /*Modificaciones en emcabezado*/
+header, nav{
+  display: flex;
+  flex-direction: row;
+  display: table;
+  background-color: pink; /* color fondo superior*/
+  /* font-size: 8rem; espacio entre logo y menu header */
+  height:auto; /*le da ancho al header background superior*/
+}
+/*modifica menu superior aplica en todas las paginas*/
+.subAllNavUlLi{ 
+  list-style: none;
+}
+.margin {padding: 1px;
+margin: 2rem;
+}
+.border{ 
+  border: solid 0.1rem blueviolet; /*esta estiqueta predomina sobre las otras*/
+}
+ /*modificando posicion de imagen*/
+.imagIndexMove{
+  position: relative;
+  top: 1rem;
+  left: 4rem;
+}        
+img.logo{
+   width: 4%;
+} /*con width podemos darle tamaño a las fotos o a una en especifico usando etiquetas
+                 /*Modificaciones footer*/
+footer /* color fondo inferior*/{
+  justify-content: center; /*ayuda a alinear el footer donde se lo quiera-tambien 
+                            se puede usar= flex"end"start", space-around"between"evenly y center */
+  background-color: pink;
+}
+           /*Modificaciones en la pestaña nosotros*/
+/* modifica el tamaño texto en contacto*/
+form{
+  font-size: 3rem;
+} 
+.overflowLoremAcomodarNosotros {
+ width: 40rem;
+ height: 40rem;
+ color: blueviolet;
+ text-decoration: underline;
+ overflow: hidden; /*Hidden hace que el texto no se sueprponga con el contenido de la pagina
+  - tambien podemso usar scroll,auto y visible*/
+}
+/*Modifica texto*/
+a{
+    text-decoration: none;
+}
+img.imagenNosotros{
+  width: 20rem;
+  height: 20rem;  
+}
+            /*Modifica pestaña contactos*/
+.bgParrafoContactoRecuadro {
+background-image: url(../images/Reclamos\ contacto\ pasarela.webp);
+padding: 10rem;
+color: peru;}
+
+ul{
+  font-size: 2rem;
+  display: flex;
+}
+img.homeModelo{
+  width: 50rem;
+}
+             /*Modifica pestaña accesorios*/
+.ordenListaAccesorios{
+  text-align: left;
+  position: relative;
+  top: 1rem;
+  left: 0rem;
+  right: 0rem;
+  background-color: antiquewhite;
+}
+.borderAccesorios {
+  border: solid 0.5rem black;
+}
+.bgColorAccesorios {
+  background-color: lightcoral;
+}
+.ordenListaAccesorios {
+  display: grid;
+  grid-template-columns: 28rem;
+  grid-template-rows: 8rem 8rem 8rem 8rem;  
+}
+           /*Modifica pestaña prendas*/
+
+.ordenListaPrendas{
+  text-align: left;
+  position: relative;
+  top: 1rem;
+  left: 0rem;
+  right: 0rem;
+  background-color: antiquewhite;
+}
+.borderPrendas {
+  border: solid 0.5rem black;
+}
+.bgColorPrendas {
+  background-color: lightcoral;
+}
+.ordenListaPrendas {
+  display: grid;
+  grid-template-columns: 28rem;
+  grid-template-rows: 8rem 8rem 8rem 8rem; 
+}
