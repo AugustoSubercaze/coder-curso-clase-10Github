@@ -11,6 +11,12 @@ html {
 a{
   text-decoration: none;
 }
+header, nav{
+  display: flex;
+  flex-direction: row;
+  display: table;
+  height:auto; /*le da ancho al header background superior*/
+}
                        /*Comienza GRID*/
 @media screen and (max-width:769px){
   body {background-color: yellow;}
@@ -31,7 +37,7 @@ a{
   "footerGrid"
   "prendasGrid"
   "imagIndexMove gridMainIndex";
-  background-color: pink;
+  background-image: radial-gradient(pink,antiquewhite);
 }
 
 .gridMainIndex {
@@ -42,13 +48,8 @@ a{
 }
 
                   /*Modificaciones en emcabezado*/
-header, nav{
-  display: flex;
-  flex-direction: row;
-  display: table;
-  background-color: pink; /* color fondo superior*/
-  /* font-size: 8rem; espacio entre logo y menu header */
-  height:auto; /*le da ancho al header background superior*/
+.bgColor{
+  background-image: linear-gradient(pink,antiquewhite);
 }
 /*modifica menu superior aplica en todas las paginas*/
 .subAllNavUlLi{ 
@@ -149,4 +150,33 @@ img.homeModelo{
   display: grid;
   grid-template-columns: 28rem;
   grid-template-rows: 8rem 8rem 8rem 8rem; 
+}
+/*agregando animaciones y transformaciones*/
+.gridIndex{
+  background-image: radial-gradient(pink,antiquewhite);
+}
+.logoMovimiento:hover { /*pseudo clase*/
+transform: translatex(2rem);
+transition: all 5s;
+}
+/* .subAllNavUlLi:hover{ /*pseudo clase :
+  transform: translatex(2rem);
+transition: all 5s;
+}
+*/
+/*Animaciones*/
+/*animacion aplicada en el logo*/
+@keyframes movimiento{
+  0%{transform: translate(10rem);}
+  25%{transform: skew(60deg);}
+  50%{transform: rotate(45deg);}
+  75%{transform: translate(10rem);}
+  100%{transform: scale(2,2);}
+}
+.logoMovimiento{
+animation-name: movimiento;
+animation-iteration-count: 1;
+animation-timing-function: ease-in-out;
+animation-duration: 10s;
+animation-delay: 2s;
 }
