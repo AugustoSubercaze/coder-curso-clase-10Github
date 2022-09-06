@@ -35,16 +35,14 @@ header, nav{
   "encabezadoNav"
   "subAllNavUlLi"
   "footerGrid"
-  "prendasGrid"
-  "imagIndexMove gridMainIndex";
+  "prendasGrid";
   background-image: radial-gradient(pink,antiquewhite);
 }
 
 .gridMainIndex {
   display: grid;
   grid-template-areas: 
-  homeModelo
-  loremIndex;
+  homeModelo;
 }
 
                   /*Modificaciones en emcabezado*/
@@ -62,11 +60,7 @@ margin: 2rem;
   border: solid 0.1rem blueviolet; /*esta estiqueta predomina sobre las otras*/
 }
  /*modificando posicion de imagen*/
-.imagIndexMove{
-  position: relative;
-  top: 1rem;
-  left: 4rem;
-}        
+      
 img.logo{
    width: 4%;
 } /*con width podemos darle tamaño a las fotos o a una en especifico usando etiquetas
@@ -152,9 +146,7 @@ img.homeModelo{
   grid-template-rows: 8rem 8rem 8rem 8rem; 
 }
 /*agregando animaciones y transformaciones*/
-.gridIndex{
-  background-image: radial-gradient(pink,antiquewhite);
-}
+
 .logoMovimiento:hover { /*pseudo clase*/
 transform: translatex(2rem);
 transition: all 5s;
@@ -180,3 +172,36 @@ animation-timing-function: ease-in-out;
 animation-duration: 10s;
 animation-delay: 2s;
 }
+
+.color1{color: blueviolet; background-color: pink;}
+
+
+.color2{color: blueviolet; background-color: pink;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*descartando codigos*/
+/*
+.imagIndexMove{
+  position: relative;
+  top: 1rem;
+  left: 4rem;
+}  
+.gridIndex{
+  background-image: radial-gradient(pink,antiquewhite);
+}
+
+
+ASJKLGDFHASHJDASD*/
