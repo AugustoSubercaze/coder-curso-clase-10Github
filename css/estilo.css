@@ -87,10 +87,6 @@ form{
 a{
     text-decoration: none;
 }
-img.imagenNosotros{
-  width: 20rem;
-  height: 20rem;  
-}
             /*Modifica pestaña contactos*/
 .bgParrafoContactoRecuadro {
 background-image: url(../images/Reclamos\ contacto\ pasarela.webp);
@@ -100,9 +96,6 @@ color: peru;}
 ul{
   font-size: 2rem;
   display: flex;
-}
-img.homeModelo{
-  width: 50rem;
 }
              /*Modifica pestaña accesorios*/
 .ordenListaAccesorios{
@@ -173,15 +166,24 @@ animation-duration: 10s;
 animation-delay: 2s;
 }
 
+/*aplicando bootstrap*/
 .color1{color: blueviolet; background-color: pink;}
-
-
 .color2{color: blueviolet; background-color: pink;}
 
 
 
-
-
+.prendasAlinear{
+  max-width: 100%;
+  height: auto;
+}
+.nosotrosAlinear{
+  max-width: 100%;
+  height: auto;
+}
+.accesoriosAlinear{
+  max-width: 100%;
+  height: auto;
+}
 
 
 
