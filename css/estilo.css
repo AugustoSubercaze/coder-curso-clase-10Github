@@ -12,10 +12,12 @@ a{
   text-decoration: none;
 }
 header, nav{
+  margin: auto;
   display: flex;
   flex-direction: row;
   display: table;
-  height:auto; /*le da ancho al header background superior*/
+  height:auto;
+  border: auto;
 }
                        /*Comienza GRID*/
 @media screen and (max-width:769px){
@@ -35,7 +37,8 @@ header, nav{
   "encabezadoNav"
   "subAllNavUlLi"
   "footerGrid"
-  "prendasGrid";
+  "prendasGrid"
+  "row";
   background-image: radial-gradient(pink,antiquewhite);
 }
 
@@ -53,19 +56,17 @@ header, nav{
 .subAllNavUlLi{ 
   list-style: none;
 }
-.margin {padding: 1px;
+.margin {padding: rem;
 margin: 2rem;
 }
 .border{ 
-  border: solid 0.1rem blueviolet; /*esta estiqueta predomina sobre las otras*/
-}
- /*modificando posicion de imagen*/
-      
+  border: solid 0.1rem blueviolet;
+}      
 img.logo{
    width: 4%;
-} /*con width podemos darle tamaño a las fotos o a una en especifico usando etiquetas
+} 
                  /*Modificaciones footer*/
-footer /* color fondo inferior*/{
+footer{
   justify-content: center; /*ayuda a alinear el footer donde se lo quiera-tambien 
                             se puede usar= flex"end"start", space-around"between"evenly y center */
   background-color: pink;
@@ -87,12 +88,6 @@ form{
 a{
     text-decoration: none;
 }
-            /*Modifica pestaña contactos*/
-.bgParrafoContactoRecuadro {
-background-image: url(../images/Reclamos\ contacto\ pasarela.webp);
-padding: 10rem;
-color: peru;}
-
 ul{
   font-size: 2rem;
   display: flex;
@@ -171,7 +166,6 @@ animation-delay: 2s;
 .color2{color: blueviolet; background-color: pink;}
 
 
-
 .prendasAlinear{
   max-width: 100%;
   height: auto;
@@ -185,25 +179,12 @@ animation-delay: 2s;
   height: auto;
 }
 
-
-
-
-
-
-
-
-
-
-/*descartando codigos*/
-/*
-.imagIndexMove{
-  position: relative;
-  top: 1rem;
-  left: 4rem;
-}  
-.gridIndex{
-  background-image: radial-gradient(pink,antiquewhite);
+.margenCarrusel{
+  margin: 1rem;  
 }
-
-
-ASJKLGDFHASHJDASD*/
+.margenPrendasImg{
+  margin: 1rem;
+}
+.margenAccesoriosImg{
+  margin: 1rem;
+}
