@@ -1,190 +1,185 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Mouse+Memoirs&family=Pattaya&display=swap');
-*{
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Mouse+Memoirs&family=Pattaya&display=swap");
+* {
   box-sizing: border-box 0rem;
-  font-family: 'Baloo Thambi 2', cursive;
-}
+  font-family: 'Baloo Thambi 2', cursive; }
+
 /* Etiqueta html con font size % que ayuda a usar rem en vez de px-1rem=10px*/
-a{text-decoration: none; color: blueviolet;}
-html {
-  font-size: 62.5%;
-}
-a{
+a {
   text-decoration: none;
-}
-header, nav{
+  color: blueviolet; }
+
+html {
+  font-size: 62.5%; }
+
+@media screen and (max-width: 769px) {
+  body {
+    background-color: yellow; }
+  header nav {
+    width: 200px;
+    height: 10px; }
+  a {
+    color: white; }
+  .margin {
+    padding: 1px;
+    margin: 2rem; } }
+
+header, nav {
   margin: auto;
   display: flex;
   flex-direction: row;
   display: table;
-  height:auto;
-  border: auto;
-}
-                       /*Comienza GRID*/
-@media screen and (max-width:769px){
-  body {background-color: yellow;}
-  header nav{
-    width: 200px;
-    height: 10px;
-  }
-  a {color: white;}
-.margin {padding: 1px;
-   margin: 2rem;}
-}                       
-.gridIndex{
-  display: grid;
-  grid-template-areas: 
-  "logo"
-  "encabezadoNav"
-  "subAllNavUlLi"
-  "footerGrid"
-  "prendasGrid"
-  "row";
-  background-image: radial-gradient(pink,antiquewhite);
-}
+  height: auto;
+  border: auto; }
+  header .subAllNavUlLi, nav .subAllNavUlLi {
+    list-style: none; }
+  header .margin, nav .margin {
+    padding: rem;
+    margin: 2rem; }
+  header .border, nav .border {
+    border: solid 0.1rem blueviolet; }
+  header img.logo, nav img.logo {
+    width: 4%; }
+  header .bgColor, nav .bgColor {
+    background-image: linear-gradient(pink, antiquewhite); }
 
-.gridMainIndex {
-  display: grid;
-  grid-template-areas: 
-  homeModelo;
-}
-
-                  /*Modificaciones en emcabezado*/
-.bgColor{
-  background-image: linear-gradient(pink,antiquewhite);
-}
-/*modifica menu superior aplica en todas las paginas*/
-.subAllNavUlLi{ 
-  list-style: none;
-}
-.margin {padding: rem;
-margin: 2rem;
-}
-.border{ 
-  border: solid 0.1rem blueviolet;
-}      
-img.logo{
-   width: 4%;
-} 
-                 /*Modificaciones footer*/
-footer{
-  justify-content: center; /*ayuda a alinear el footer donde se lo quiera-tambien 
-                            se puede usar= flex"end"start", space-around"between"evenly y center */
-  background-color: pink;
-}
-           /*Modificaciones en la pestaña nosotros*/
-/* modifica el tamaño texto en contacto*/
-form{
-  font-size: 3rem;
-} 
-.overflowLoremAcomodarNosotros {
- width: 40rem;
- height: 40rem;
- color: blueviolet;
- text-decoration: underline;
- overflow: hidden; /*Hidden hace que el texto no se sueprponga con el contenido de la pagina
-  - tambien podemso usar scroll,auto y visible*/
-}
-/*Modifica texto*/
-a{
-    text-decoration: none;
-}
-ul{
+ul {
   font-size: 2rem;
-  display: flex;
-}
-             /*Modifica pestaña accesorios*/
-.ordenListaAccesorios{
+  display: flex; }
+
+body {
+  background-color: pink;
+  text-decoration: none; }
+  body header {
+    text-align: center; }
+  body {
+    text-decoration: none; }
+
+footer {
+  justify-content: center;
+  background-color: pink; }
+
+/*Modifica pestaña accesorios*/
+.ordenListaAccesorios {
   text-align: left;
   position: relative;
   top: 1rem;
   left: 0rem;
   right: 0rem;
-  background-color: antiquewhite;
-}
+  background-color: antiquewhite; }
+
 .borderAccesorios {
-  border: solid 0.5rem black;
-}
+  border: solid 0.5rem black; }
+
 .bgColorAccesorios {
-  background-color: lightcoral;
-}
+  background-color: lightcoral; }
+
 .ordenListaAccesorios {
   display: grid;
   grid-template-columns: 28rem;
-  grid-template-rows: 8rem 8rem 8rem 8rem;  
-}
-           /*Modifica pestaña prendas*/
+  grid-template-rows: 8rem 8rem 8rem 8rem; }
 
-.ordenListaPrendas{
+/*Modifica pestaña prendas*/
+.ordenListaPrendas {
   text-align: left;
   position: relative;
   top: 1rem;
   left: 0rem;
   right: 0rem;
-  background-color: antiquewhite;
-}
+  background-color: antiquewhite; }
+
 .borderPrendas {
-  border: solid 0.5rem black;
-}
+  border: solid 0.5rem black; }
+
 .bgColorPrendas {
-  background-color: lightcoral;
-}
+  background-color: lightcoral; }
+
 .ordenListaPrendas {
   display: grid;
   grid-template-columns: 28rem;
-  grid-template-rows: 8rem 8rem 8rem 8rem; 
-}
-/*agregando animaciones y transformaciones*/
+  grid-template-rows: 8rem 8rem 8rem 8rem; }
 
-.logoMovimiento:hover { /*pseudo clase*/
-transform: translatex(2rem);
-transition: all 5s;
-}
-/* .subAllNavUlLi:hover{ /*pseudo clase :
+/*agregando animaciones y transformaciones*/
+.logoMovimiento:hover {
+  /*pseudo clase*/
   transform: translatex(2rem);
-transition: all 5s;
-}
-*/
+  transition: all 5s; }
+
 /*Animaciones*/
 /*animacion aplicada en el logo*/
-@keyframes movimiento{
-  0%{transform: translate(10rem);}
-  25%{transform: skew(60deg);}
-  50%{transform: rotate(45deg);}
-  75%{transform: translate(10rem);}
-  100%{transform: scale(2,2);}
-}
-.logoMovimiento{
-animation-name: movimiento;
-animation-iteration-count: 1;
-animation-timing-function: ease-in-out;
-animation-duration: 10s;
-animation-delay: 2s;
-}
+@keyframes movimiento {
+  0% {
+    transform: translate(10rem); }
+  25% {
+    transform: skew(60deg); }
+  50% {
+    transform: rotate(45deg); }
+  75% {
+    transform: translate(10rem); }
+  100% {
+    transform: scale(2, 2); } }
+
+.logoMovimiento {
+  animation-name: movimiento;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-delay: 2s; }
 
 /*aplicando bootstrap*/
-.color1{color: blueviolet; background-color: pink;}
-.color2{color: blueviolet; background-color: pink;}
+.color1 {
+  color: blueviolet;
+  background-color: pink; }
 
+.color2 {
+  color: blueviolet;
+  background-color: pink; }
 
-.prendasAlinear{
+.prendasAlinear {
   max-width: 100%;
-  height: auto;
-}
-.nosotrosAlinear{
-  max-width: 100%;
-  height: auto;
-}
-.accesoriosAlinear{
-  max-width: 100%;
-  height: auto;
-}
+  height: auto; }
 
-.margenCarrusel{
-  margin: 1rem;  
-}
-.margenPrendasImg{
+.nosotrosAlinear {
+  max-width: 100%;
+  height: auto; }
+
+.accesoriosAlinear {
+  max-width: 100%;
+  height: auto; }
+
+.margenCarrusel {
   margin: 1rem;
-}
-.margenAccesoriosImg{
+  padding-top: 5rem; }
+
+.margenPrendasImg {
   margin: 1rem;
-}
+  padding-top: 5rem; }
+
+.margenAccesoriosImg {
+  margin: 1rem;
+  padding-top: 5rem; }
+
+.margenNosotrosImg {
+  margin: 1rem;
+  padding-top: 5rem; }
+
+.gridIndex {
+  display: grid;
+  grid-template-areas: "logo" "encabezadoNav" "subAllNavUlLi" "footerGrid" "prendasGrid" "row";
+  background-image: radial-gradient(pink, antiquewhite); }
+
+.gridMainIndex {
+  display: grid;
+  grid-template-areas: homeModelo; }
+
+form {
+  font-size: 3rem; }
+
+.overflowLoremAcomodarNosotros {
+  width: 40rem;
+  height: 40rem;
+  color: blueviolet;
+  text-decoration: underline;
+  overflow: hidden;
+  /*Hidden hace que el texto no se sueprponga con el contenido de la pagina
+    - tambien podemso usar scroll,auto y visible*/ }

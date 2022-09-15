@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Mouse+Memoirs&family=Pattaya&display=swap');
+*{
+  box-sizing: border-box 0rem;
+  font-family: 'Baloo Thambi 2', cursive;
+}
+/* Etiqueta html con font size % que ayuda a usar rem en vez de px-1rem=10px*/
+a{text-decoration: none; color: blueviolet;}
+html {
+  font-size: 62.5%;
+}
+@media screen and (max-width:769px){
+    body {background-color: yellow;}
+    header nav{
+      width: 200px;
+      height: 10px;
+    }
+    a {color: white;}
+  .margin {padding: 1px;
+     margin: 2rem;}
+  }         
+header, nav{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    display: table;
+    height:auto;
+    border: auto;
+    .subAllNavUlLi{ 
+        list-style: none;
+      }
+      .margin {padding: rem;
+      margin: 2rem;
+      }
+      .border{ 
+        border: solid 0.1rem blueviolet;
+      }      
+      img.logo{
+         width: 4%;
+      } 
+      .bgColor{
+        background-image: linear-gradient(pink,antiquewhite);
+      }
+  }
+  ul{
+  font-size: 2rem;
+  display: flex;
+}

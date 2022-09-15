@@ -1,0 +1,126 @@
+/*Modifica pestaña accesorios*/
+.ordenListaAccesorios{
+    text-align: left;
+    position: relative;
+    top: 1rem;
+    left: 0rem;
+    right: 0rem;
+    background-color: antiquewhite;
+  }
+  .borderAccesorios {
+    border: solid 0.5rem black;
+  }
+  .bgColorAccesorios {
+    background-color: lightcoral;
+  }
+  .ordenListaAccesorios {
+    display: grid;
+    grid-template-columns: 28rem;
+    grid-template-rows: 8rem 8rem 8rem 8rem;  
+  }
+             /*Modifica pestaña prendas*/
+  
+  .ordenListaPrendas{
+    text-align: left;
+    position: relative;
+    top: 1rem;
+    left: 0rem;
+    right: 0rem;
+    background-color: antiquewhite;
+  }
+  .borderPrendas {
+    border: solid 0.5rem black;
+  }
+  .bgColorPrendas {
+    background-color: lightcoral;
+  }
+  .ordenListaPrendas {
+    display: grid;
+    grid-template-columns: 28rem;
+    grid-template-rows: 8rem 8rem 8rem 8rem; 
+  }
+  /*agregando animaciones y transformaciones*/
+  
+  .logoMovimiento:hover { /*pseudo clase*/
+  transform: translatex(2rem);
+  transition: all 5s;
+  }
+  /*Animaciones*/
+  /*animacion aplicada en el logo*/
+  @keyframes movimiento{
+    0%{transform: translate(10rem);}
+    25%{transform: skew(60deg);}
+    50%{transform: rotate(45deg);}
+    75%{transform: translate(10rem);}
+    100%{transform: scale(2,2);}
+  }
+  .logoMovimiento{
+  animation-name: movimiento;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-delay: 2s;
+  }
+  
+  /*aplicando bootstrap*/
+  .color1{color: blueviolet; background-color: pink;}
+  .color2{color: blueviolet; background-color: pink;}
+  
+  
+  .prendasAlinear{
+    max-width: 100%;
+    height: auto;
+  }
+  .nosotrosAlinear{
+    max-width: 100%;
+    height: auto;
+  }
+  .accesoriosAlinear{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .margenCarrusel{
+    margin: 1rem;  
+    padding-top: 5rem;
+  }
+  .margenPrendasImg{
+    margin: 1rem;
+    padding-top: 5rem;
+  }
+  .margenAccesoriosImg{
+    margin: 1rem;
+    padding-top: 5rem;
+  }
+  .margenNosotrosImg{
+    margin: 1rem;
+    padding-top: 5rem;
+  }
+  .gridIndex{
+    display: grid;
+    grid-template-areas: 
+    "logo"
+    "encabezadoNav"
+    "subAllNavUlLi"
+    "footerGrid"
+    "prendasGrid"
+    "row";
+    background-image: radial-gradient(pink,antiquewhite);
+  }
+  
+  .gridMainIndex {
+    display: grid;
+    grid-template-areas: 
+    homeModelo;
+  }
+  form{
+    font-size: 3rem;
+  } 
+  .overflowLoremAcomodarNosotros {
+   width: 40rem;
+   height: 40rem;
+   color: blueviolet;
+   text-decoration: underline;
+   overflow: hidden; /*Hidden hace que el texto no se sueprponga con el contenido de la pagina
+    - tambien podemso usar scroll,auto y visible*/
+  }
