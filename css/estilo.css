@@ -165,7 +165,12 @@ footer {
 
 .gridIndex {
   display: grid;
-  grid-template-areas: "logo" "encabezadoNav" "subAllNavUlLi" "footerGrid" "prendasGrid" "row";
+  grid-template-areas: "logo"
+ "encabezadoNav"
+ "subAllNavUlLi"
+ "footerGrid"
+ "prendasGrid"
+ "row";
   background-image: radial-gradient(pink, antiquewhite); }
 
 .gridMainIndex {
@@ -181,5 +186,4 @@ form {
   color: blueviolet;
   text-decoration: underline;
   overflow: hidden;
-  /*Hidden hace que el texto no se sueprponga con el contenido de la pagina
-    - tambien podemso usar scroll,auto y visible*/ }
+ }
