@@ -1,47 +1,6 @@
-/*Modifica pestaña accesorios*/
-.ordenListaAccesorios{
-    text-align: left;
-    position: relative;
-    top: 1rem;
-    left: 0rem;
-    right: 0rem;
-    background-color: antiquewhite;
-  }
-  .borderAccesorios {
-    border: solid 0.5rem black;
-  }
-  .bgColorAccesorios {
-    background-color: lightcoral;
-  }
-  .ordenListaAccesorios {
-    display: grid;
-    grid-template-columns: 28rem;
-    grid-template-rows: 8rem 8rem 8rem 8rem;  
-  }
-             /*Modifica pestaña prendas*/
+ /*agregando animaciones y transformaciones*/
   
-  .ordenListaPrendas{
-    text-align: left;
-    position: relative;
-    top: 1rem;
-    left: 0rem;
-    right: 0rem;
-    background-color: antiquewhite;
-  }
-  .borderPrendas {
-    border: solid 0.5rem black;
-  }
-  .bgColorPrendas {
-    background-color: lightcoral;
-  }
-  .ordenListaPrendas {
-    display: grid;
-    grid-template-columns: 28rem;
-    grid-template-rows: 8rem 8rem 8rem 8rem; 
-  }
-  /*agregando animaciones y transformaciones*/
-  
-  .logoMovimiento:hover { /*pseudo clase*/
+ .logoMovimiento:hover { /*pseudo clase*/
   transform: translatex(2rem);
   transition: all 5s;
   }
@@ -61,36 +20,65 @@
   animation-duration: 10s;
   animation-delay: 2s;
   }
-  
+  .ordenListaPrendas{
+    text-align: left;
+    position: relative;
+    top: 1rem;
+    left: 0rem;
+    right: 0rem;
+    background-color: antiquewhite;
+  }
+  .borderPrendas {
+    border: solid 0.1rem black;
+    margin: 1rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 20px;
+    width: 22rem;
+  }
+  .bgColorPrendas {
+    background-color: lightcoral;
+    margin: 0;
+  }
+  .borderAccesorios {
+    border: solid 0.1rem black;
+    margin: 1rem;
+    height: 3rem;
+    text-align: center;
+    font-size: 20px;
+    width: 22rem;
+  }
+  .bgColorAccesorios {
+    background-color: lightcoral;
+    margin: 0;
+  }
   /*aplicando bootstrap*/
   .color1{color: blueviolet; background-color: pink;}
   .color2{color: blueviolet; background-color: pink;}
   
-  
-  .prendasAlinear{
-    max-width: 100%;
-    height: auto;
-  }
   .nosotrosAlinear{
     max-width: 100%;
     height: auto;
   }
   .accesoriosAlinear{
-    max-width: 100%;
     height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
   }
-  
   .margenCarrusel{
     margin: 1rem;  
     padding-top: 5rem;
   }
   .margenPrendasImg{
-    margin: 1rem;
+    margin: 10rem;
     padding-top: 5rem;
+    padding: 1rem;
   }
   .margenAccesoriosImg{
-    margin: 1rem;
+    margin: 10rem;
     padding-top: 5rem;
+    padding: 1rem;
   }
   .margenNosotrosImg{
     margin: 1rem;
