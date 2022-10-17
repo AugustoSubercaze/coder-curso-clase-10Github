@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Mouse+Memoirs&family=Pattaya&display=swap");
 * {
-  box-sizing: border-box 0rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'Baloo Thambi 2', cursive; }
 
 /* Etiqueta html con font size % que ayuda a usar rem en vez de px-1rem=10px*/
@@ -12,8 +14,6 @@ html {
   font-size: 62.5%; }
 
 @media screen and (max-width: 769px) {
-  body {
-    background-color: yellow; }
   header nav {
     width: 200px;
     height: 10px; }
@@ -175,7 +175,7 @@ footer {
 
 .gridIndex {
   display: grid;
-  grid-template-areas: "logo" "encabezadoNav" "subAllNavUlLi" "footerGrid" "prendasGrid" "row";
+  grid-template-areas: "logo" "encabezadoNav" "subAllNavUlLi" "footerGrid" "row";
   background-image: radial-gradient(pink, antiquewhite); }
 
 .gridMainIndex {
